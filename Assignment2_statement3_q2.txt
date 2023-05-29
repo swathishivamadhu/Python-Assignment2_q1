@@ -1,0 +1,9 @@
+L = [[1,2,3],[ 4,5,6,3 ],[-1,-2,-10,5,8]]
+average_sum=[]
+total_sum=0
+for e in L:
+  average=sum(e)/len(e)
+  average_sum.append(average)
+  total_sum+=average
+print(average_sum)
+print(total_sum)
