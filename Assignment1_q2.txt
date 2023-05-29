@@ -1,0 +1,8 @@
+result=0
+log_msg="D:100 W:200 D:400"
+for msg in log_msg.split(' '):
+  if msg.split(':')[0] == 'D':
+    result += int(msg.split(':')[1])
+  else:
+    result -= int(msg.split(':')[1])
+print(result)
